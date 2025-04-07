@@ -86,7 +86,7 @@ export const App = () => {
   return (
     <>
     <div className='flex flex-col justify-center px-20 pr-30 w-full space-y-10 items-center'>
-    <section className='flex  justify-center items-center  gap-20  w-full'>
+    <section className='flex  justify-center items-center  gap-20  w-full pt-20'>
       <div className='flex flex-col justify-center items-center shadow-lg border-1 border-gray-100 p-10 rounded-3xl min-w-110 space-y-5'>
       {submitStatus === 'success' && (
         <div className="">
@@ -99,7 +99,7 @@ export const App = () => {
           Hubo un problema al enviar tu mensaje. Por favor intenta de nuevo más tarde.
         </div>
       )}
-        <p className='text-2xl'>Login</p>
+        <p className='text-2xl'>Enviar correo</p>
           <form ref={refForm} action='' onSubmit={handleSubmit} className='flex flex-col space-y-3 w-full'>
             <fieldset> 
               <input
