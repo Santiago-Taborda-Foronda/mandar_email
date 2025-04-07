@@ -123,7 +123,7 @@ export const App = () => {
                 onChange={handleChange} 
                 className='p-3 border-gray-400 hover:border-gray-600 focus:outline-none border-2 rounded-lg w-full' placeholder='✉ Ingrese su correo'
                 />
-                {errors.email && <span className="error">{errors.email}</span>}
+                {errors.email && <span className="text-red-600 text-sm mt-1 block">{errors.email}</span>}
             </fieldset>
             <fieldset>
               <textarea 
@@ -133,7 +133,7 @@ export const App = () => {
               onChange={handleChange} 
               className='p-3 border-gray-400 hover:border-gray-600 focus:outline-none border-2 rounded-lg w-full' placeholder='🔒Ingrese el contenido del correo'
               />
-              {errors.message && <span className="error">{errors.message}</span>}  
+              {errors.message && <span className="text-red-600 text-sm mt-1 block">{errors.message}</span>}  
             </fieldset>   
             <button
               type="submit"
@@ -142,7 +142,6 @@ export const App = () => {
                 Enviar
             </button>
           </form>
-
             
         </div>
 
